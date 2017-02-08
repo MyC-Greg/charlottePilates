@@ -1,0 +1,149 @@
+html {
+  padding-right: 0px;
+  padding-left: 0px;
+  margin: 0px;
+}
+
+body {
+  font-family: 'Oxygen', sans-serif;
+  padding-bottom: 20px;
+  color: #4d0020;
+  text-align: justify;
+  min-height: 2000px;
+  padding-top: 70px;
+}
+.container{
+  width: 100%;
+  padding: 0;
+  background-color: #fff3f8;
+}
+.navbar {
+  margin-bottom: 19px;
+  background-color: rgba(193, 66, 66, 0.08);
+  padding-left: 20px;
+}
+
+.navbar-brand {
+  transform: translateX(-50%);
+  left: 50%;
+  position: absolute;
+  font-family: 'Bree Serif', serif;
+  font-size: 210%;
+}
+
+.left-hand-side-presentation{
+float: left;
+position: relative;
+width: 42.33%;
+padding-right: 20px;
+padding-top: 4%;
+padding-bottom: 10px;
+padding-left: 30px;
+}
+
+#citation1{
+  font-style: italic;
+  font-size: 120%;
+  color: #4d0020;
+}
+
+.image-center{
+  float: left;
+  position: relative;
+  width: 15.33%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.img-circle{
+  margin:0 auto;
+  display: block;
+}
+
+.right-hand-side-presentation{
+float: left;
+position: relative;
+width: 42.33%;
+padding-left: 20px;
+padding-top: 4%;
+padding-bottom: 10px;
+padding-right: 30px;
+}
+
+#citation2{
+  font-style: italic;
+  font-size: 120%;
+  color: #4d0020;
+}
+
+.separateur {
+  background-color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'Bree Serif', serif;
+  color: #777;
+  clear: left;
+}
+
+.left-hand-side-description{
+  float: left;
+  width: 50%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 30px;
+  padding-right: 5%;
+  text-align: right;
+}
+
+.right-hand-side-description{
+float: left;
+width: 50%;
+}
+.img-responsive{
+  margin: 0 auto;
+  max-width: 80%;
+}
+
+.secondRow .left-hand-side-description{
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+.secondRow .right-hand-side-description{
+  padding-left: 5%;
+  padding-right: 10px;
+  padding-top: 2%;
+}
+
+.thirdRow .img-responsive {
+  max-width: 60%;
+}
+
+.panel-default{
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+.table{
+  text-align: left;
+}
+
+.panel-heading  {
+  text-align: center;
+  background-color: #fff3f8;
+}
+
+.row{
+  text-align: center;
+}
+
+.footer{
+  padding-top: 5%;
+}
+
+.footer .container{
+  background-color: #ffe6f7;
+}
