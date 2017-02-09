@@ -9,7 +9,7 @@ body {
   padding-bottom: 20px;
   color: #4d0020;
   text-align: justify;
-  min-height: 2000px;
+  min-height: 100%;
   padding-top: 70px;
 }
 .container{
@@ -17,10 +17,53 @@ body {
   padding: 0;
   background-color: #fff3f8;
 }
+
+
+
+/*Navbar*/
+@media (max-width: 992px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin: 7.5px -15px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .navbar-text {
+        float: none;
+        margin: 15px 0;
+    }
+    /* since 3.1.0 */
+    .navbar-collapse.collapse.in {
+        display: block!important;
+    }
+    .collapsing {
+        overflow: hidden!important;
+    }
+    .navbar .navbar-brand{
+      font-size: 150%;
+    }
+}
 .navbar {
   margin-bottom: 19px;
   background-color: rgba(193, 66, 66, 0.08);
-  padding-left: 20px;
 }
 
 .navbar-brand {
@@ -29,10 +72,96 @@ body {
   position: absolute;
   font-family: 'Bree Serif', serif;
   font-size: 210%;
+  }
+
+/*End Navbar*/
+
+
+/*#main content*/
+/********* presentation ---  small devices **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  #presentation{
+    font-size: 80%;
+  }
+  .left-hand-side-presentation{
+    margin: 0 auto;
+    text-align: center;
+  }
+  #presentation .left-hand-side-presentation{
+    width: 100%;
+    padding-left: 20px;
+  }
+  #presentation .right-hand-side-presentation{
+    width: 100%;
+    padding-top: 2%;
+    padding-right: 20px;
+  }
+  #presentation .left-hand-side-presentation section{
+    padding-left: 0;
+  }
+  #presentation .right-hand-side-presentation section{
+    padding-left: 0;
+  }
+  .right-hand-side-presentation{
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+
+  }
+  .image-center{
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .image-center .img-circle{
+    width:130px;
+    height:130px;
+  }
+  .separateur {
+    font-size: 10%;
+  }
 }
 
+/********* presentation -----  XS devices **********/
+@media (max-width: 767px) {
+  #presentation{
+    font-size: 60%
+  }
+  #presentation .left-hand-side-presentation{
+    width: 100%;
+    padding-left: 20px;
+  }
+  #presentation .right-hand-side-presentation{
+    width: 100%;
+    padding-top: 2%;
+    padding-right: 20px;
+  }
+  .image-center .img-circle{
+    width:120px;
+    height:120px;
+  }
+  .left-hand-side-presentation{
+    margin: 0 auto;
+    text-align: center;
+  }
+  .right-hand-side-presentation{
+    margin: 0 auto;
+    text-align: center;
+  }
+  .image-center{
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+
+}
+/********* end of presentation XS devices **********/
+
+
+/********* normal devices presentation **********/
+
 .left-hand-side-presentation{
-float: left;
 position: relative;
 width: 42.33%;
 padding-right: 20px;
@@ -46,28 +175,31 @@ padding-left: 30px;
   font-size: 120%;
   color: #4d0020;
 }
-
+.left-hand-side-presentation section{
+  padding-left: 20px;
+}
 .image-center{
-  float: left;
-  position: relative;
   width: 15.33%;
   padding-top: 10px;
   padding-bottom: 10px;
-}
+  padding-right: 0;
+  padding-left: 0;
 
+}
 .img-circle{
-  margin:0 auto;
-  display: block;
+  width:160px;
+  height:160px;
 }
-
 .right-hand-side-presentation{
-float: left;
 position: relative;
 width: 42.33%;
-padding-left: 20px;
+padding-left: 0px;
 padding-top: 4%;
-padding-bottom: 10px;
 padding-right: 30px;
+padding-bottom: 20px;
+}
+.right-hand-side-presentation section{
+  padding-left: 20px;
 }
 
 #citation2{
@@ -75,7 +207,21 @@ padding-right: 30px;
   font-size: 120%;
   color: #4d0020;
 }
+/********* end of normal devices presentation **********/
 
+/********* small devices separateur **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .separateur h2{
+    font-size: 20px;
+  }
+}
+/********* extra-small devices separateur **********/
+@media (max-width: 767px) {
+  .separateur h2{
+    font-size: 15px;
+  }
+}
+/********* normal devices separateur **********/
 .separateur {
   background-color: white;
   padding-top: 10px;
@@ -86,26 +232,135 @@ padding-right: 30px;
   color: #777;
   clear: left;
 }
+/********* fin normal devices separateur **********/
+
+
+/********* small devices 1st row **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .left-hand-side-description section {
+      font-size: 80%;
+  }
+   h3{
+    font-size: 170%;
+  }
+   h4{
+    font-size: 130%;
+  }
+}
+
+/********* extra-small devices 1st row **********/
+@media (max-width: 767px) {
+  .firstRow .left-hand-side-description{
+    margin: 0 auto;
+    float: none;
+    text-align: center;
+}
+.firstRow .left-hand-side-description section {
+  padding-left: 0;
+}
+.firstRow .left-hand-side-description ul {
+  padding-left: 0;
+}
+.left-hand-side-description section {
+      font-size: 70%;
+  }
+   h3{
+    font-size: 170%;
+  }
+   h4{
+    font-size: 130%;
+  }
+.firstRow .right-hand-side-description{
+  float: none;
+  margin: 0 auto;
+  padding-right: 0;
+  padding-left: 0;
+}
+#health{
+  width: 60%;
+}
+
+}
+
+/********* end of XS devices 1st row **********/
+
+
+/********* normal devices 1st row **********/
 
 .left-hand-side-description{
   float: left;
   width: 50%;
-  padding-top: 2%;
   padding-bottom: 2%;
   padding-left: 30px;
   padding-right: 5%;
   text-align: right;
 }
 
+.left-hand-side-description section{
+  padding-left: 20px;
+}
+
 .right-hand-side-description{
 float: left;
 width: 50%;
 }
+.right-hand-side-description section{
+  padding-right: 20px;
+}
 .img-responsive{
   margin: 0 auto;
-  max-width: 80%;
+  max-width: 70%;
 }
 
+li{
+  list-style-type: none;
+}
+
+.right-hand-side-description ul {
+  padding-left: 0;
+  }
+
+#health{
+  max-width: 70%;
+}
+/********* end of normal devices 1st row **********/
+
+/********* small devices 2nd row **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .right-hand-side-description section {
+    font-size: 80%;
+  }
+}
+/********* extra small devices 2nd row **********/
+@media (max-width: 767px) {
+  .right-hand-side-description section {
+    font-size: 70%;
+  }
+  .secondRow .left-hand-side-description{
+    margin: 0 auto;
+    float: none;
+}
+ .secondRow .right-hand-side-description  {
+  margin: 0 auto;
+  float: none;
+  text-align: center;
+  padding-left: 0px!important;
+  padding-right: 0px!important;
+}
+.secondRow .right-hand-side-description section {
+  padding-right: 0;
+}
+.secondRow .right-hand-side-description ul {
+  padding-right: 0;
+}
+}
+/********* end of XS devices 2nd row **********/
+
+
+/********* Normal devices 2nd row **********/
+#friends{
+    max-width: 55%;
+}
 .secondRow .left-hand-side-description{
   padding-top: 0;
   padding-bottom: 0;
@@ -115,9 +370,48 @@ width: 50%;
 .secondRow .right-hand-side-description{
   padding-left: 5%;
   padding-right: 10px;
-  padding-top: 2%;
+}
+/********* end of normal devices 2nd row **********/
+
+
+/********* extra-small devices 3rd row **********/
+@media (max-width: 767px) {
+  .thirdRow .left-hand-side-description{
+    margin: 0 auto;
+    float: none;
+    text-align: center;
+}
+.thirdRow .left-hand-side-description section {
+  padding-left: 0;
+}
+.thirdRow .left-hand-side-description ul {
+  padding-left: 0;
+}
+.thirdRow .right-hand-side-description{
+  float: none;
+  margin: 0 auto;
+  padding-right: 0;
+  padding-left: 0;
+}
+}
+/********* end of XS devices 3rd row **********/
+
+
+/********* small devices 4th row **********/
+@media (min-width: 768px) and (max-width: 991px) {
+   .panel-default{
+    font-size: 85%;
+  }
 }
 
+/********* extra-small devices 4th row **********/
+@media (max-width: 767px) {
+  .panel-default{
+   font-size: 75%;
+ }
+}
+
+/********* normal devices 4th row **********/
 .thirdRow .img-responsive {
   max-width: 60%;
 }
@@ -136,14 +430,61 @@ width: 50%;
   background-color: #fff3f8;
 }
 
-.row{
+.datum{
   text-align: center;
 }
+/********* end of normal devices 4th row **********/
+/*end main content*/
 
-.footer{
-  padding-top: 5%;
+
+/*footer*/
+/********* Footer Large devices **********/
+@media (max-width: 991px){
+  .panel-footer #testimonials{
+    padding-top: 0px;
+  }
+}
+/********* Footer small devices **********/
+@media (min-width: 768px) and (max-width: 991px) {
+.panel-footer section{
+  font-size: 80%;
+}
+}
+/********* Footer extra-small devices **********/
+@media (max-width: 767px) {
+  .panel-footer section{
+    font-size: 70%;
+  }
 }
 
-.footer .container{
+.panel-footer {
   background-color: #ffe6f7;
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 0;
+}
+
+.panel-footer .container{
+  background-color: #ffe6f7;
+  text-align: center;
+}
+.panel-footer div.row {
+  margin-bottom: 35px;
+}
+
+.title {
+  font-family: 'Bree Serif', serif;
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #777;
+}
+
+.cities {
+  font-weight: bold;
+}
+
+#testimonials{
+  font-style: italic;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
