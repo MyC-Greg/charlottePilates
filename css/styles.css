@@ -27,6 +27,7 @@ body {
     }
     .navbar-toggle {
         display: block;
+        margin-right: 30px; 
     }
     .navbar-collapse {
         border-top: 1px solid transparent;
@@ -254,6 +255,8 @@ padding-bottom: 20px;
     margin: 0 auto;
     float: none;
     text-align: center;
+    width: 90%;
+
 }
 .firstRow .left-hand-side-description section {
   padding-left: 0;
@@ -275,6 +278,7 @@ padding-bottom: 20px;
   margin: 0 auto;
   padding-right: 0;
   padding-left: 0;
+  width: auto;
 }
 #health{
   width: 60%;
@@ -339,6 +343,7 @@ li{
   .secondRow .left-hand-side-description{
     margin: 0 auto;
     float: none;
+    width: 90%;
 }
  .secondRow .right-hand-side-description  {
   margin: 0 auto;
@@ -346,6 +351,7 @@ li{
   text-align: center;
   padding-left: 0px!important;
   padding-right: 0px!important;
+  width: 80%;
 }
 .secondRow .right-hand-side-description section {
   padding-right: 0;
@@ -380,6 +386,7 @@ li{
     margin: 0 auto;
     float: none;
     text-align: center;
+    width: 80%;
 }
 .thirdRow .left-hand-side-description section {
   padding-left: 0;
@@ -392,6 +399,7 @@ li{
   margin: 0 auto;
   padding-right: 0;
   padding-left: 0;
+  width: auto;
 }
 }
 /********* end of XS devices 3rd row **********/
@@ -407,7 +415,7 @@ li{
 /********* extra-small devices 4th row **********/
 @media (max-width: 767px) {
   .panel-default{
-   font-size: 75%;
+   font-size: 1.6vw;
  }
 }
 
